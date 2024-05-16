@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFigma | LESSON 3 PLACEHOLDER></title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header id="header"></header>
+    <div class="container">
+        <div class="content">
+             <article>
+                 <div>
+                    <h1>Створення прототипу</h1>
+                    <div>
+                        Вітаю на proFigma! На минулих заняттях ми розглянули основні функціональні можливості Figma та створили наш перший макет. 
+                    </div>
+                    <section>
+                        <div>
+                            В кінці минулого заняття я запропонував попрактикуватися та створити декілька нових сторінок на задану тему. 
+                            Сьогодні ми продовжимо роботу над дизайном застосунку для обміну зображеннями та створими свій перший прототип.
+                            Всі дії в цій статті будуть проводитися над заздалегідь створеними фреймами.
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/all-frames.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                    </section>
+
+                    <section id="prototype-tab">
+                        <h2>
+                            1.Перехід до прототипування
+                        </h2>
+                        <div>
+                            Досі ми працювали виключно з атрибутами на вкладці "Design" на панелі властивостей. Прийшов час перейти на вкладку "Prototype".
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/prototype-tab.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                    </section>
+
+                    <section id="starting-frame">
+                        <h2>
+                            2.Встановіть стартовий фрейм
+                        </h2>
+                        <div>
+                            Прототипування у Figma працює шляхом створення зв’язків між фреймами та елементами в фреймах. 
+                            Коли ми представляємо прототип, користувач може натискати пов’язані елементи, щоб переміщатися між екранами макету.
+                        </div>
+                        <div>
+                            Примітка: Перш ніж створювати будь-який прототип, доцільно переконатися, що ваші фрейми мають характерні назви.
+                            Щоб перейменувати фрейм, все, що вам потрібно зробити, це двічі клацнути його мітку у верхньому лівому куті кожного фрейму, ввести нове ім’я та натиснути Enter.
+                            В моєму випадку, назви кожного фрейму носять описовий характер: Login Screen, Photo Stream, Photo Page, Profile.
+                        </div>
+                        <div>
+                            Перш за все для створення початкового фрейму нам потрібно встановити екран, з якого починається використання прототипу. 
+                            Обираємо фрейм "Login Screen" на панелі шарів, і бачимо зміни параметрів на вкладці "Prototype" на панелі властивостей. 
+                            Клікаємо на позначку "+" праворуч від напису "Flow starting point".
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/flow-starting-point.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                    </section>
+
+                    <section id="connections">
+                        <h2>
+                            3.Встановіть зв'язки між фреймами
+                        </h2>
+                        <div>
+                            Якщо ми вибираємо фрейми або певні елементи, які знаходяться в них, коли відкрита вкладка прототипування, ми отримуємо додатковий круглий маркер на правій рамці обраного об’єкту. 
+                            Цей маркер дозволяє нам встановити, на який екран веде цей об’єкт, при активації.
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/first-connection-trigger.png" alt="">
+                            <p class="pic-info">Вибір кнопки "Увійти" при створенні прототипу</p>
+                        </div>
+                        <div>
+                            Нарешті, давайте використаємо це для створення з’єднання. 
+                            Спочатку виберіть кнопку "Увійти" на екрані входу. 
+                            Тепер необхідно перетягнути маркер на бажаний фрейм, 
+                            щоб створити з’єднання. 
+                            В моєму випадку, коли користувач натискатиме кнопку "Увійти" на прототипі, він переходить на екран "Photo Stream".
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/first-connection-flow.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                        <div>
+                            Після успішного підключення з’явиться невелике контекстне меню з описом того, як працюватиме взаємодія. 
+                            Перегляньте параметри спадного меню та змініть їх як побажаєте.
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/connection-settings.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                        <div>
+                            Давайте повторимо процес, пов’язавши одну з фотографій з екраном "Photo Page".
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/photo-to-photo-page.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                        <div>
+                            Спробуйте самостійно встановити зв'язки для кнопок навігаційного меню.
+                        </div>
+                    </section>
+
+                    <section id="test-prototype">
+                        <h2>
+                            4.Протестуйте прототип
+                        </h2>
+                        <div>
+                            Ви можете запустити свій прототип, натиснувши кнопку "Present" у верхньому правому куті інтерфейсу Figma. 
+                            Зробімо це зараз, щоб перевірити, чи всі встановлені з’єднання працюють за планом!
+                        </div>
+                        <div class="img-container">
+                            <img src="./resources/prototype-presentation.png" alt="">
+                            <p class="pic-info"></p>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    Це заняття завершує цикл статей з основ роботи у Figma. Сподіваюсь, що ви отримали цілісне уявлення про процес створення макетів та прототипів у Figma та навчилися основним 
+                    методам і прийомам, які допомагають ефективно реалізувати свої дизайнерські ідеї. 
+                </div>
+                <div class="suggested-pages-bar">
+                    <a class="suggested-page" href="second-lesson.html">Повернутись до створення макетів</a>
+                </div>
+             </article>
+             <div class="hidden-element">
+                ...
+            </div>
+             <div class="article-navigation-column">
+                 <div class="sticky-container">
+                     <ol class="theory-nav-bar">
+                         <p>Створення прототипу</p>
+                         <li><a href="#prototype-tab">Перехід до прототипування</a></li>
+                         <li><a href="#starting-frame">Встановіть стартовий фрейм</a></li>
+                         <li><a href="#connections">Встановіть зв'язки між фреймами</a></li>
+                         <li><a href="#test-prototype">Протестуйте прототип</a></li>
+                     </ol>
+                 </div>
+             </div>
+        </div>
+     </div>
+    <footer id="footer"></footer>
+</body>
+<script src="script/scripts.js"></script>
+</html>
